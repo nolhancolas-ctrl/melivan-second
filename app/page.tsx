@@ -1,15 +1,18 @@
 // app/page.tsx
-import ProjectsIntroSection from "@/components/sections/ProjectsIntroSection";
-import VideoGallerySection from "@/components/sections/VideoGallerySection";
+import ProjectsHeroSection from "@/components/sections/ProjectsHeroSection";
+import ProjectsGridSection from "@/components/sections/ProjectsGridSection";
 import BookCallSection from "@/components/sections/BookCallSection";
 
 export default function Page() {
   return (
-    <main className="pt-16 md:pt-20 pb-4">
-      {/* Gère l'espace vertical entre les sections */}
-      <div className="space-y-16 md:space-y-24">
-        <ProjectsIntroSection />
-        <VideoGallerySection />
+    <main id="top" className="pt-28 md:pt-32">
+      <ProjectsHeroSection />
+
+      <div className="section-gap-after-hero">
+        <ProjectsGridSection />
+      </div>
+
+      <div className="section-gap-after-grid">
         <BookCallSection />
       </div>
     </main>
