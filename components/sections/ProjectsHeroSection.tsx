@@ -8,10 +8,9 @@ export default function ProjectsHeroSection() {
     >
       <div className="hero-grid">
         <div>
-          <h1 id="projects-title" className="hero-title">
+          <h1 id="projects-title" className="hero-title pt-4">
             Projects
           </h1>
-          <div className="hero-meta">(2020–26©)</div>
         </div>
 
         <div className="hero-copy">
