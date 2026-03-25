@@ -2,19 +2,26 @@
 import ProjectsHeroSection from "@/components/sections/ProjectsHeroSection";
 import ProjectsGridSection from "@/components/sections/ProjectsGridSection";
 import BookCallSection from "@/components/sections/BookCallSection";
+import MelivanAnimatedTitle from "@/components/sections/MelivanAnimatedTitle";
 
 export default function Page() {
   return (
-    <main id="top" className="pt-28 md:pt-32">
-      <ProjectsHeroSection />
+    <>
+      <section className="pt-[100px]">
+          <MelivanAnimatedTitle />
+      </section>
 
-      <div className="section-gap-after-hero">
+      <section className="page-shell pt-[0px] pb-[500px] md:pb-[500px]">
+        <ProjectsHeroSection />
+      </section>
+
+      <section className="mt-[94px] md:mt-[196px] pb-16 md:pb-24">
         <ProjectsGridSection />
-      </div>
+      </section>
 
-      <div className="section-gap-after-grid">
+      <section className="mt-[56px] md:mt-[110px] pb-10">
         <BookCallSection />
-      </div>
-    </main>
+      </section>
+    </>
   );
 }
